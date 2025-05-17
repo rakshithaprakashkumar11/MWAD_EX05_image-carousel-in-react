@@ -39,10 +39,32 @@ Use setInterval to call the nextImage() function at regular intervals.
 Clean up the interval when the component unmounts using clearInterval to prevent memory leaks.
 
 ## PROGRAM
+### App.jsx:
+```
+import React from 'react';
+import FoodDisplay from './components/FoodDisplay';
 
+function App() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-orange-100 flex items-center justify-center py-12">
+      <FoodDisplay />
+    </div>
+  );
+}
 
+export default App;
+```
+
+### App.css:
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+```
 ## OUTPUT
-
-
+![alt text](<project/src/img/Screenshot 2025-05-17 194516.png>)
+![alt text](<project/src/img/Screenshot 2025-05-17 194525.png>)
+![alt text](<project/src/img/Screenshot 2025-05-17 194536.png>)
 ## RESULT
 The program for creating Image Carousel using React is executed successfully.
